@@ -1,0 +1,73 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+ .slideShow {
+    height: auto;
+    margin: 0px auto 10px auto;
+    position: relative;
+    width: 100%;
+}
+.slideShow img {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width:100%;
+    height:100%;
+}
+#ddata-portfolio-container{
+	position:relative;
+	clear:both;
+}
+#portfolio-container{
+	overflow-y: hidden;
+}
+.portfolio-row:last-child {
+	padding-bottom: 15%;
+}
+
+.portfolio-row{
+	margin-bottom:5%
+}
+
+.row-2 .portfolio-row img{
+	position:absolute;
+}
+
+.gallery{
+	width:100%;
+	overflow-y: hidden;
+	position:relative;
+}
+.gallery img{
+	margin-bottom:30px;
+	margin-right:5%;
+}
+.pull-left{
+	left:-550px;
+	float:left;
+}
+.pull-right{
+	float:right;
+	right:-550px;
+}
+@media only screen and (max-width: 600px) {
+.row-2 .portfolio-row img {
+    position: relative;
+}
+.gallery img {
+    margin-bottom: 30px !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    width: 90%;
+}
+.portfolio-row {
+    height: 100% !important;
+}
+.pull-left, .pull-right{
+	float:initial;
+	right:0px;
+	margin:0px auto;
+}
+}
